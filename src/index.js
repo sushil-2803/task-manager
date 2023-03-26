@@ -1,19 +1,4 @@
-const express = require('express')
-//import routes
-
-const userRoutes= require('./router/user')
-const taskRoutes= require('./router/task')
-
-
-const app = express()
-
-app.use(express.json())
-const port = process.env.PORT
-app.use(userRoutes)
-app.use(taskRoutes)
-
-
-
+const app = require('./app')
 
 app.get('/',(req,res)=>{
     res.send('Hello World')
