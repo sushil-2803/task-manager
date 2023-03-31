@@ -4,7 +4,7 @@ const express = require('express')
 const userRoutes= require('./router/user')
 const taskRoutes= require('./router/task')
 
-
+port=process.env.PORT||3000
 const app = express()
 
 app.use(express.json())
