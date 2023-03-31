@@ -95,9 +95,6 @@ userSchema.methods.generateAuthToken= async function(){
     await user.save()
     return token
 }
-
-
-
 // defining custom  statics on schema for whole collectoin
 
 userSchema.statics.findByCredentials = async (email,passowrd)=>{

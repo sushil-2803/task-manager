@@ -4,12 +4,13 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "env-cmd -f ./config/test.env jest",
+    "test": "env-cmd -f ./config/test.env jest  --runInBand",
     "dev": "env-cmd -f ./config/dev.env nodemon",
     "start": "node src/index.js"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "modulePathIgnorePatterns": ["../__tests__/fixtures/"]
   },
   "keywords": [],
   "author": "",
