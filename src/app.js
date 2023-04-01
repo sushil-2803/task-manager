@@ -16,7 +16,7 @@ app.use(taskRoutes)
 
 
 app.get('/',(req,res)=>{
-    res.send('Hello World')
+    res.send('<h1> Welcome To Task Manager API </h1> <br> <h2> Please use Postman API tool and  /users or /tasks routes to access the API </h2> <br> <h3> Thank You </h3> <h4> By: Sushil Dubey </h4>')
 })
 
 
